@@ -1,0 +1,134 @@
+header{/*working on styling header*/
+  
+    
+  /* Using rgb value for colors*/
+    background-color: rgb(0, 191, 255); 
+}
+
+
+
+body
+{
+
+    background-image: url("view.jpg");
+    background-color: skyblue;
+    background-size: cover;
+ 	background-position: horizontal vertical;
+}
+
+
+h1,h2
+{
+     color: black;
+     text-transform: uppercase;
+ 	 font-size: 38px;
+ 	 text-align: center; 
+ 	 margin-top: 50px;
+}
+
+.nav-bar
+ /*navigation bar placing*/
+ {
+ 	float: right;
+ 	list-style: center;
+ 	margin-top: -80px;
+
+ }
+ .nav-bar li
+
+ {
+ 	display: inline-block;
+    padding: 7px;
+
+ }
+
+ .nav-bar li a
+ {
+
+ 	color: black;
+ 	text-decoration: none;
+ 	padding: 5px 20px;
+ 	font-family: Arial, helvetica, sans-serif;
+ 	font-size: 20px;
+ }
+
+ .nav-bar li.active a
+ {
+ 	border: none;
+ 	padding: 1px ;
+
+ }
+
+ .nav-bar li a:hover
+
+{
+	border: 1px solid black;
+	padding: 2px;
+    background-color: red;
+    font-size: 40px;
+}
+
+.nav-bar li a:visited
+{
+    
+    color: deepskyblue;
+    text-decoration: none; 
+}
+
+
+div.relative 
+{ /*using of relative position*/
+  position: relative;
+  left: 20px;
+  border:3.5px solid red;
+  width: 700px;
+  height: 500px;
+  font-size: 40px;    
+}
+
+
+div.absolute 
+{/*using of absolute position*/
+  position: absolute;
+  top: 250px;
+  right: 20px;
+  width: 300px;
+  height: 200px;
+  border: 5px solid green;
+  font-size: 30px; 
+}
+
+aside { 
+ font-size: 1.5em; 
+}
+
+ aside blockquote {/*blockquotes and quotation marks.*/
+    
+     
+     color:rgb(255, 0, 0);
+     background-color: beige;
+     margin: 20px 5px;
+     quotes: "\201C" "\201D";
+     
+}
+    
+ aside blockquote::before { 
+ content: open-quote;
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 1.5em;
+ font-weight: bold;
+ 
+         
+}
+ aside blockquote::after {
+ content: close-quote;    
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 1.5em;
+ font-weight: bold;
+        
+}
+    
+    
+
+
+

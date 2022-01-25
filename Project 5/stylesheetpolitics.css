@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+html {
+   
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+}
+
+body {
+   background-color:rgb(0, 174, 243);
+   box-shadow: rgb(51, 51, 51) 20px 0px 50px,  rgb(51, 51, 51) -20px 0px 50px;
+   border-left: 1px solid rgb(153, 0, 153);
+   border-right: 1px solid rgb(153, 0, 153);
+   height: 100%;   
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1200px;   
+   width: 100%;
+}
+
+/* Flex Layout */
+
+body {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: column nowrap;
+   flex-flow: column nowrap;
+}
+
+header, footer {
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+}
+
+div#container {
+   -webkit-flex: 1 0 auto;
+   flex: 1 0 auto;
+}
+
+/* Header styles */
+
+header {
+   background-color: red;
+   border-bottom: 1px solid rgb(153, 0, 153);
+   color: white;
+
+}
+
+header h1 {
+   background: linear-gradient(to right, rgb(153, 0, 153) 30%, black);
+   color: white;
+   font-size: 1.4em;
+   padding: 5px 0px 5px 12px;
+}
+
+header h1 em {
+   font-size: 0.7em;
+}
+
+/* Navigation list styles */
+
+header nav ul li {
+   background-color: rgb(218, 210, 218);
+   font-size: 0.8em;   
+   padding: 0px 10px;
+}
+
+header nav ul li a {
+   color: rgb(153, 0, 153);
+   display: inline-block;
+   width: 100%;
+}
+
+header nav ul li a:hover {
+   color: white;
+   background-color: rgb(153, 0, 153);
+}
+
+a#navicon {
+   display: inline-block;
+}
+
+/* Container Styles */
+
+div#container {
+   background: rgb(248, 248, 210);
+
+}
+
+
+/* Main Section styles */
+
+section#main {
+   padding: 10px 25px 0px 25px;
+}
+
+section#main img {
+   display: block;
+   width: 100%;
+}
+section#main1 img {
+    
+   display:block;
+   width: 100%;
+}
+
+section#main h2 {
+   color: white;
+   background: linear-gradient(to right, rgb(153, 0, 153) 30%, black);
+   font-size: 1.1em;
+   letter-spacing: 5px;
+   padding: 5px 0px 5px 12px;
+}
+
+section#main p {
+   line-height: 1.4em;
+   margin: 15px;
+}
+
+.image1{
+    
+    float: right;
+    text-align: left;
+    width:400px;
+    height:400px;
+}
+
+/* Right Section styles */
+
+section#right {
+   padding: 0px 15px 0px 15px;
+}
+
+/* Aside styles */
+aside {
+   border: 1px solid rgb(153, 0, 153);
+   border-radius: 20px;
+   box-shadow: inset rgb(131, 131, 131) 7px 7px 10px,  inset rgb(131, 131, 131) -7px -7px 10px,  rgb(51, 51, 51) -7px 7px 25px;
+   margin: 15px 0px;
+   width: 100%;
+}
+
+aside#current {
+   background-color: rgb(218, 210, 218);
+}
+
+aside#current p {
+   border-left: 4px solid rgb(153,0,153);
+   font-size: 0.9em;
+}
+
+aside p:last-of-type {
+   margin-bottom: 25px;
+}
+
+aside h1 {
+   background-color: rgb(153,0,153);
+   border-radius: 10px;
+   color: white;
+   font-size: 0.9em;
+   text-align: center;
+   margin: 10px;
+}
+
+aside h2 {
+   color: black;
+   text-align: left;
+   font-size: 0.9em;
+   line-height: 0.95;
+   margin: 15px;
+}
+
+aside p {
+   border-left: 4px solid rgb(255,202,255);
+   font-size: 0.7em;
+   padding: 0px 0px 0px 5px;
+   margin: 10px 25px;
+}
+
+aside#future {
+   background-color: white;
+}
+
+/* Footer styles */   
+
+footer {
+   color: white;    
+   background: linear-gradient(to right, rgb(153, 0, 153) 30%, black);   
+   font-size: 0.65em;  
+   font-style: normal;
+   height: 30px;
+   line-height: 30px;   
+   text-align: center;
+  
+}
+
+
+
+
+ @media only screen and (min-width: 641px) { 
+ article { 
+ -moz-column-count: 2; 
+ -webkit-column-count: 2; 
+ column-count: 2; 
+
+-moz-column-gap: 30px; 
+-webkit-column-gap: 30px; 
+column-gap: 60px;
+
+-moz-column-rule: 2px solid gray; 
+-webkit-column-rule: 2px solid gray; 
+column-rule: 2px solid gray;
+
+widows: 3; 
+orphans: 3;
+
+ } 
+
+
+article h1 { 
+ -moz-column-span: all; 
+ -webkit-column-span: all; 
+ column-span: all; 
+}
+     
+/*table styling*/
+     
+ table.schedule { 
+ background: white; 
+ border: 10px outset rgb(153, 0, 153); 
+ border-collapse: collapse;
+ font-size: 0.75em; 
+ width: 100%; 
+}
+
+/* Table Cell Styles */
+
+table.schedule th, table.schedule td { 
+ border: 1px solid gray; 
+ padding: 5px; 
+ vertical-align: top;
+}
+
+/* Table Caption Styles */
+
+table.schedule caption { 
+ caption-side: bottom; 
+ text-align: right; 
+}
+
+/* Row Styles */
+
+table.schedule thead { 
+ background: rgb(153, 0, 153); 
+ color: white; 
+}
+
+table.schedule tfoot { 
+ background: black; 
+ color: white; 
+}
+
+table.schedule thead tr { 
+ height: 30px; 
+}
+
+table.schedule tbody tr { 
+ height: 40px; 
+}
+
+/* Column Styles */
+
+col#firstCol { 
+ background: rgb(218, 210, 218); 
+ width: 16%;
+} 
+col.dayCols { 
+ background: rgb(255, 220, 255); 
+ width: 12%; 
+}
+
+
+

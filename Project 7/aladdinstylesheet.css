@@ -1,0 +1,176 @@
+ *
+ {
+ 	margin:0;
+ 	padding:0 ;
+
+ }
+
+
+
+
+ html {
+   background: rgb(7, 24, 56););
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+
+      
+
+body {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;    
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1100px;  
+   padding: 10px;
+   width: 100%;
+}
+
+/* Header styles */
+
+body header {
+   border-bottom: 10px solid yellow;
+   color: darkgrey;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap; 
+   -webkit-align-items: flex-end;
+   align-items: flex-end; 
+   margin-bottom: 30px;
+   width: 100%;
+}
+
+
+/* Section Styles */
+
+body > section {
+   -webkit-flex: 1 1 400px;
+   flex: 1 1 400px;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;   
+}
+
+/* Article Styles */
+
+body > section > article {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+
+body > section > article > div#synopsis {
+   -webkit-flex: 2 2 640px;
+   flex: 1 1 540px;
+   padding-right: 15px;
+}
+
+
+body > section > article h1 {
+   color: yellow;   
+   font-size: 3.1em;
+   font-family: "Times New Roman", serif;
+   line-height: 1em;
+}
+
+body > section > article p {
+   color: red;
+   font-size: 1.2em;
+   margin: 20px 0px;
+}
+ 
+.box-one{/*boxed text*/
+
+
+	background-color: darkred;
+	align-content: center;
+	padding: 55px;
+	height: 250px;
+	width: 250px;
+	border: 25px;
+	margin: 55px;
+
+}
+
+
+
+/* Aside Styles */
+
+body > section > aside:first-of-type {
+   -webkit-flex: 1 1 265px;
+   flex: 1 1 265px;
+}
+
+body > section > aside:last-of-type {
+   -webkit-flex: 1 1 325px;
+   flex: 1 1 330px;
+}
+
+body > section > aside {
+   
+   color: yellow;   
+   margin: 25px 25px 25px 0px;
+   background-color: gray;
+   box-shadow: inset 15px 15px 25px red,
+               inset -15px -15px 25px darkred;
+   border-radius: 35px;
+   padding: 20px;
+}
+
+body > section > aside > h1 {
+    
+   font-size: 1.5em;
+   font-weight: normal;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+body > section > aside > p {
+   color:black;
+    margin: 15px 0px 20px;
+}
+
+
+/* Footer Styles */
+
+footer {
+   border-top: 1px solid rgb(255, 255, 205);
+   clear: left;
+   text-align: right;
+   width: 100%;
+}
+
+
+
+/* Audio and Video Player Styles */
+
+audio, video { 
+ box-shadow: rgb(51, 51, 51) 8px 8px 15px; 
+ display: block; 
+ margin: 10px auto; 
+ width: 90%; 
+}
+
+/* Track Styles */
+
+
+::cue { 
+ background: skyblue; 
+ color: black; 
+ font: 1.2em serif; 
+}
+
+::cue(.Main) { 
+ text-shadow: black 3px 3px 0px; 
+ font: 2.5em serif; 
+}
+
+
+

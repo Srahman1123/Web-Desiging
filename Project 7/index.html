@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <!-- A scrolling marquee highlighting the time and dates using JavaScript -->
+	<script type="text/javascript">
+var tWidth='300px';                  // width (in pixels)
+var tHeight='25px';                  // height (in pixels)
+var tcolour='#ffffcc';               // background color:
+var moStop=true;                     // pause on mouseover (true or false)
+var fontfamily = 'arial,sans-serif'; // font for content
+var tSpeed=4;                        // scroll speed (1 = slow, 5 = fast)
+
+<!--ticker content here-->
+var content='The show is on every weekends starting 12/04/2021 till 12/31/2021 from 8-10 pm . Hoping to see you and your family!!! <a href="http:\/\/aladdinbroadwaymusical.com\/"><\/a>';
+
+var cps=-tSpeed; var aw, mq; var fsz = parseInt(tHeight) - 4; function startticker(){if (document.getElementById) {var tick = '<div style="position:relative;width:'+tWidth+';height:'+tHeight+';overflow:hidden;background-color:'+tcolour+'"'; if (moStop) tick += ' onmouseover="cps=0" onmouseout="cps=-tSpeed"'; tick +='><div id="mq" style="position:absolute;right:0px;top:0px;font-family:'+fontfamily+';font-size:'+fsz+'px;white-space:nowrap;"><\/div><\/div>'; document.getElementById('ticker').innerHTML = tick; mq = document.getElementById("mq"); mq.style.right=(10+parseInt(tWidth))+"px"; mq.innerHTML='<span id="tx">'+content+'<\/span>'; aw = document.getElementById("tx").offsetWidth; lefttime=setInterval("scrollticker()",50);}} function scrollticker(){mq.style.right = (parseInt(mq.style.right)>(-10 - aw)) ?
+mq.style.right = parseInt(mq.style.right)+cps+"px": parseInt(tWidth)+10+"px";} window.onload=startticker;
+
+    </script>
+    
+	<!-- Code below is where the external style sheet was linked -->
+
+	<link href="aladdinstylesheet.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+	<title>ALADDIN Broadway Musical-Shamsur Rahman</title>
+	<header>
+		<div class="row">
+		<div class="logo"><!--logo-->
+			<a href="index.html"><img src="Aladdin.jpg" width="100" height="100"></a>
+   
+
+		</div>
+		
+
+	</header>
+        
+    </head>
+
+    <div id="ticker"></div> <br><br><br>
+    
+ <body>
+
+
+<section>
+	
+	<article>
+        
+		<div id=synopsis >
+			<h1>Aladdin Broadway Musical</h1><br><br><br>
+			<p><img src="brodway.jpg" alt="Broadway" /></p>
+
+			<p> Aladdin is a Broadway musical based on the 1992 Disney animated film of the same name with a book by Chad Beguelin,
+			music by Alan Menken and lyrics by Howard Ashman, Tim Rice and Beguelin. It resurrects three songs written by Menken and
+			Ashman for the film but not used, and adds four songs written by Menken and Beguelin.</p>
+
+			<p>Set in the fictional Arabian city of Agrabah, the story follows the familiar tale of a poor young man who is granted
+			three wishes by a genie in a lamp, which he uses to woo a princess and to thwart the sultan's evil Grand Vizier.</p>
+
+			<!--image with text wrapped-->
+            <img align="left" src="jasmine.jpg" width="400" height="200">
+		    <P>The shows music was written by 8-time Oscar-winner, Alan Menken, including
+		    "A whole new world", which won the Academy Award for the Best Original Song.</P>
+            
+		</div>
+		<br>
+		
+		
+	</article>
+    
+    
+
+	<aside>
+         <div style="background-image: url('background.jpg');"><!--background image for one section-->
+		<h1>The Aladdin Musical</h1>
+		<p>Lyrically, "A Whole New World" describes Aladdin showing the confined princess a life of freedom and the pair's acknowledgment of their love for each other while riding on a magic carpet.</p>
+		<p>Composer Alan Menken divulges the story of the genesis of the romantic Aladdin classic.</p>
+		<p>Click the play button below to hear the tune.</p>
+		<audio controls>
+			<source src="world.mp3" type="audio/mp3" /> <!--adding audio with control -->
+			
+			<p><em>To play this audio clip, your browser needs to support HTML5.</em></p>
+		</audio>
+	</aside>
+
+	<aside>
+		<h1>Fabolous and Extravagant</h1>
+		<p>While the animated film was in development, the character of the Genie was based on jazz greats Cab Calloway and Fats Waller. Though this concept was eventually changed for the film, it was brought back to life for the Broadway show.
+		</p>
+		<p>Click the play button to view this classic show.</p>
+		
+		 <video controls poster="cover.png"> <!--adding video with control -->
+            <source src="aladdinVideo.mp4" type="video/mp4" />
+             
+             <!-- Professor Salb, As you could see I added the code for the captions to pop up for the browsers however, If the captions does not show in Internet explorer please try using google chrome. As for me, My captions are showing in my video-->
+             
+            <track src="captions.vtt" kind="captions" label="captions" default> <!--adding caption in the video-->
+            <p><em>To play this video clip, your browser needs to support HTML5.</em></p>
+         </video>
+		
+	</aside>
+        
+        <H1><u>Accomplishments</u></H1><!-- boxed text-->
+           <div class="box-one">
+
+     <p ><q> <em>In 2014,</em> Aladdin on broadway won Tony Award.</q> </p><br>
+     <p ><q>A whole new world</q>, which won the Academy Award as well as two Grammys for the Best Original Song.</p><br>
+     <p ><q>A Whole New World</q> also won an Oscar for Best Song From A Motion Picture.</p>
+
+      </div>
+        
+</section>
+
+    
+
+
+<footer>
+	Aladdin Musical &copy; 2021 English (US) <span> <a href="#">About</a> <a href="#">Credits</a> <a
+			href="#">Policy</a>
+	</span>
+</footer>
+    
+	</body>
+</html>
